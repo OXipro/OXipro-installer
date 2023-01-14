@@ -12,6 +12,10 @@ For function
 install modpack/update modpack
 the function will launch the download of the archive from the web server "http://ipoftheserver/modpackname/archive.zip" and displays the progress of the download in a progress bar and then the function will extract the archive in "%appdata%/.oxiprosinstaller/"
 # Customize installer
+> **_NOTE:_** this step is only for Windows users      
+> 
+> you must have download and install [**python3**](https://www.python.org/ftp/python/3.9.8/python-3.9.8-amd64.exe)
+> 
 to make your own version of the installer you must follow these steps
 1. __Download the [__lasted archive in the project relases page__](https://github.com/OXipro/OXipro-installer/releases/)__
 2. **Download** [**Auto-py-to-exe**](https://github.com/brentvollebregt/auto-py-to-exe/archive/refs/heads/master.zip)
@@ -24,8 +28,13 @@ to make your own version of the installer you must follow these steps
 serveurURL = "http://oxproject.fr.nf:8000/" <-- set the url of the web server whit directory listing
 # name of installer window
 windowname = "OXipro launcher" <-- set the name of installer window
-# text of first text lable in GUI
-windowlabletitle = "OXipro's launcher"
-# name of the installer window icon default is oxiprosinstaller.png
-windowiconame = "installer.png"
+windowlabletitle = "OXipro's launcher" <--set the text of first text lable in GUI
+windowiconame = "installer.png" <-- set name of gui icon 
 ```
+6. **Compile the exe :**    
+open a cmd in py to exe folder and run auto-py-to-exe :    
+``
+python3 run.py
+``  
+your default browser will open with auto-py-to-exe tab  
+you have to put "Archive-V1.zip" in the script location path 
